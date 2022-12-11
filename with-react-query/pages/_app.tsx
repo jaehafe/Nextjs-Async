@@ -5,8 +5,9 @@ import {
   QueryClientProvider,
 } from '@tanstack/react-query';
 import '../styles/globals.css';
+import { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   const queryClient = new QueryClient();
   // const [queryClient] = useState(() => new QueryClient());
 
